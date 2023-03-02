@@ -2,8 +2,13 @@ body {
     background-color: #59a4d2;
 }
 
-ul {
-initial-letter: text-transform capitalize;
-text-align: center;
-list-style-type: none;
+.upgrade {
+    list-style: none;
+    text-align: center; 
+}
+
+.upgrade li::first-letter {
+font-size: 30px;
+font-weight: bold;
+vertical-align: middle;
 }
