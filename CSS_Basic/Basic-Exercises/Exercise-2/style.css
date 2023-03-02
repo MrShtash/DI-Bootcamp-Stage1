@@ -1,3 +1,19 @@
 .pc {
-    background-color: pink;
+    background-color: hsl(350, 100%, 88%);
+    font-family: Verdana, DejaVu Sans, sans-serif;
+}
+
+#big {
+    font-size: 24px;
+}
+
+.bigblue {
+    font-size: 36px;
+    color: hwb(240 0% 0%);
+}
+
+.bblack {
+    background-color: #008000;
+    font-size: 24 px;
+    font-weight: bold;
 }
