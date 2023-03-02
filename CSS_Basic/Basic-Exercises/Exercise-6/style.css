@@ -11,7 +11,7 @@ p.small-para {
   font-size: 22px;
 }
 
-.confirm {
+button.confirm {
   background: green;
   color: white;
   font-weight: bold;
