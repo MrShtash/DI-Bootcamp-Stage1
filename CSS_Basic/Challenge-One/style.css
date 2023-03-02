@@ -1,0 +1,14 @@
+body {
+    background-color: #59a4d2;
+}
+
+.upgrade {
+    list-style: none;
+    text-align: center; 
+}
+
+.upgrade li::first-letter {
+font-size: 30px;
+font-weight: bold;
+vertical-align: middle;
+}
