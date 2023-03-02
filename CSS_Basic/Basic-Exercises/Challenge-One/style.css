@@ -1,0 +1,9 @@
+body {
+    background-color: #59a4d2;
+}
+
+ul {
+initial-letter: text-transform capitalize;
+text-align: center;
+list-style-type: none;
+}
