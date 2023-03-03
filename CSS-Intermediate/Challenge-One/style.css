@@ -1,10 +1,11 @@
 body {
     background-color: #3c3a96;
+    text-align: center;
+    margin: 0px 0px 0px 0px;
 }
 
 #wrap {
     float: right;
-    height: 420px;
 }
 
 .ul {
@@ -14,10 +15,9 @@ body {
 #nav {
     background-color: #8ba7c0;
     float: left;
-    height: 420px;
-
 }
 
 #content {
-
+    background-color: #5c8ca1;
+    overflow: hidden;
 }
