@@ -1,11 +1,13 @@
 body {
     background-color: #3c3a96;
     text-align: center;
-    margin: 0px 0px 0px 0px;
+    margin-top: 0px;
 }
 
 #wrap {
     float: right;
+    display: flex;
+
 }
 
 .ul {
