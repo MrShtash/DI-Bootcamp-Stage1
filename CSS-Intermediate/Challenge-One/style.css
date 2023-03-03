@@ -9,6 +9,7 @@ body {
     margin: 0 auto;
     padding-left: 100px;
     padding-right: 100px;
+    width: 800px;
 }
 
 .ul {
@@ -18,24 +19,23 @@ body {
 #nav {
     background-color: #8ba7c0;
     float: left;
-    width: 200px;
+    width: 25%;
     text-align: center;
 }
 
 #nav ul {
-        margin-left: 30px;
-        text-align: left;
+    margin-left: 30px;
+    text-align: left;
 }
 
 #content {
     background-color: #5c8ca1;
     overflow: hidden;
-    width: 600px;
+    width: 75%;
     padding-left: 20px;
     padding-right: 20px;
 }
 
 .copyright {
-    clear: both;
     background-color: #3c3a96;;
 }
