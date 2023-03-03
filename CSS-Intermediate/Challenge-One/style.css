@@ -1,0 +1,23 @@
+body {
+    background-color: #3c3a96;
+}
+
+#wrap {
+    float: right;
+    height: 420px;
+}
+
+.ul {
+    list-style: none;
+}
+
+#nav {
+    background-color: #8ba7c0;
+    float: left;
+    height: 420px;
+
+}
+
+#content {
+
+}
