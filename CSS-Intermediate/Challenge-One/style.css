@@ -5,9 +5,10 @@ body {
 }
 
 #wrap {
-    float: right;
     display: flex;
-
+    margin: 0 auto;
+    padding-left: 100px;
+    padding-right: 100px;
 }
 
 .ul {
@@ -17,9 +18,14 @@ body {
 #nav {
     background-color: #8ba7c0;
     float: left;
+    width: 200px;
+    text-align: center;
 }
 
 #content {
     background-color: #5c8ca1;
     overflow: hidden;
+    width: 600px;
+    padding-left: 20px;
+    padding-right: 20px;
 }
