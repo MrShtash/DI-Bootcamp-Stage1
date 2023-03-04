@@ -1,0 +1,24 @@
+.First {
+    margin: 10px 10 px 10px 10px;
+    text-align: center;
+    font-size: 0
+}
+
+.pink {
+    border-color: black;
+    border-width: 2px;
+    border-style: solid;
+    width: 60px;
+    height: 60px;
+    background-color: pink;
+    margin-top: 10px
+
+}
+
+.Second {
+    background-color: blue;
+}
+
+.Third {
+    background-color: yellow;
+}
