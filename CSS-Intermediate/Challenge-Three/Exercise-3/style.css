@@ -1,0 +1,59 @@
+body {
+    width: 200px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+    margin: 100px auto;
+}
+
+.cell {
+    border-color: black;
+    border-width: 2px;
+    border-style: solid;
+    margin: 0px;
+    height: 60px;
+    flex-grow: 1;
+}
+
+.green {
+    width: 195px;
+    background-color: green;
+}
+
+.next1 {
+    width: 60px;
+    background-color: red;
+    }
+    
+.next2 {
+    width: 60px;
+    background-color: green;
+    }
+
+.next3 {
+    width: 60px;
+    background-color: orange;
+    }
+
+.Third {
+    display: flex;
+    flex-grow: 1;
+    gap: 5px;
+    border-width: 1px;
+
+}
+
+.next4 {
+    width: 60px;
+    background-color: orange;
+    }
+    
+.next5 {
+    width: 60px;
+    background-color: red;
+    }
+
+.next6 {
+    width: 60px;
+    background-color: blue;
+    }
