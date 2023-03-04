@@ -1,55 +1,42 @@
-boby {
-    weight: 400px;
-    height: 9000px;
+body {
+    width: 400px;
     display: flex;
+    flex-wrap: wrap;
+    gap: 32px;
+    margin: 100px auto;
 }
 
-.First {
-    margin: 10px 10px;
-    float: left;
-
+.Column {
+    width: 60px;
+    display: flex;
+    flex-flow: column;
+    gap: 16px;
 }
 
-.pink {
+.cell {
     border-color: black;
     border-width: 2px;
     border-style: solid;
-    width: 60px;
+    margin: 0px;
     height: 60px;
-    background-color: pink;
-    margin-top: 10px;
-
 }
 
 .Second {
-    margin: 10px 10px;
-    float: right;
+    flex-grow: 1;
 }
 
 .blue {
-    border-color: black;
-    border-width: 2px;
-    border-style: solid;
-    width: 240px;
-    height: 60px;
     background-color: blue;
-    margin-top: 10px;
 }
 
 .Third {
-    margin: 10px 10px;
-    clear: both;
-
+    width: 100%;
 }
 
 .yellow {
-    border-color: black;
-    border-width: 2px;
-    border-style: solid;
-    width: 320px;
-    height: 60px;
     background-color: yellow;
-        display: inline-block;
+}
 
-
+.pink {
+    background-color: pink;
 }
