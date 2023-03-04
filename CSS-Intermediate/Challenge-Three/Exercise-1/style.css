@@ -1,6 +1,6 @@
 boby {
     weight: 400px;
-    height: 1000px;
+    height: 9000px;
     display: flex;
 }
 
@@ -24,7 +24,6 @@ boby {
 .Second {
     margin: 10px 10px;
     float: right;
-
 }
 
 .blue {
@@ -35,11 +34,11 @@ boby {
     height: 60px;
     background-color: blue;
     margin-top: 10px;
-
 }
 
 .Third {
     margin: 10px 10px;
+    clear: both;
 
 }
 
@@ -50,6 +49,7 @@ boby {
     width: 320px;
     height: 60px;
     background-color: yellow;
-    display: inline-block;
+        display: inline-block;
+
 
 }
