@@ -1,13 +1,13 @@
 boby {
     weight: 400px;
     height: 1000px;
+    display: flex;
 }
 
 .First {
-    margin: 10px 10px 10px 10px;
-    text-align: center;
-    font-size: 0;
+    margin: 10px 10px;
     float: left;
+
 }
 
 .pink {
@@ -22,10 +22,9 @@ boby {
 }
 
 .Second {
-    margin: 10px 10px 10px 10px;
-    text-align: center;
-    font-size: 0;
+    margin: 10px 10px;
     float: right;
+
 }
 
 .blue {
@@ -36,12 +35,12 @@ boby {
     height: 60px;
     background-color: blue;
     margin-top: 10px;
+
 }
 
 .Third {
-    text-align: center;
-    font-size: 0;
-    display: inline-block;
+    margin: 10px 10px;
+
 }
 
 .yellow {
@@ -51,4 +50,6 @@ boby {
     width: 320px;
     height: 60px;
     background-color: yellow;
+    display: inline-block;
+
 }
