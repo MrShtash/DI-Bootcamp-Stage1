@@ -4,6 +4,8 @@ h1 {
 }
 
 .robots {
+    flex-wrap: wrap;
+    display: flex;
 }
 
 .head, 
@@ -25,7 +27,6 @@ h1 {
 
 .eyes {
     display: flex;
-
 }
 
 .head:hover {
