@@ -1,0 +1,195 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap");
+
+/* use only this rule and don't use margin, padding: 0 like in other examples,  because it's not correct. In my project it's not critical but on text pages it will be a bad decision */
+* {
+  box-sizing: border-box;
+}
+
+/* basic simple parameters */
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: rgb(255, 255, 255);
+  text-align: center; /* text in the center (X) */
+  margin: 0;
+  padding: 0 20px;
+  background-image: url("ice.jpeg");
+  background-size: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+/* add class "page" and use flex, becourse it's better than use flex in .body. In case, when I want to add some different elements in .body */
+.page {
+  display: flex;
+  flex-flow: column; /* my page is going down from the top */
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+/* header */
+/* at first time I use absolut position, or fixed, but it's pulls out of the flow and header ceases to participate in the page markup. For fixing header use sticky  */
+.header {
+  background-color: rgb(255, 255, 255);
+  position: sticky;
+  top: 0;
+  z-index: 1; 
+  padding: 15px;
+}
+
+/* header */
+.nav-container {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  gap: 32px;
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+/* image like in-line element (big letter), that's why I use fixed size */
+.logo {
+  height: 80px;
+  width: 80px;
+}
+
+/* If I want to visit this page from phone — it is better to hide logo */
+@media (max-width: 640px) {
+  .logo {
+    display: none;
+  }
+}
+
+/* flex affects only at children, not grandchildren, that's why display: block I add in image. And image like in-line element (big letter), that's why I use fixed size */
+.logo-img {
+  display: block;
+  max-width: 100%;
+  max-height: 100%;
+}
+
+/* grow to full width */
+.bar_menu {
+  flex-grow: 1;
+}
+
+/* use gutters for good visualisation */
+.menu {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+}
+
+/* if I want to visit my page from other devices — menu will be more comfortable */
+@media (max-width: 640px) {
+  .menu {
+    justify-content: center;
+  }
+}
+
+.menu_item {
+  height: 100%;
+  cursor: pointer;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  background-color: bisque;
+}
+
+/* add main rules for container */
+.nav-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+/* flex child, that'swhy I don't use inline block, because it's already block. And I use overflow: hidden, overflow outside the banner is clipped */
+.banner {
+  overflow: hidden;
+}
+
+/* fix width because if I don't do this, the banner will look terribly large and out of proportion  */
+.banner img {
+  max-width: 100%;
+}
+
+/* add class for photo and make it in the center */
+.photo {
+  display: flex;
+  gap: 5px;
+  margin: 50px;
+  justify-content: center;
+  text-align: center;
+  flex-wrap: wrap;
+}
+
+/* add for adaptability */
+@media (max-width: 640px) {
+  .photo {
+    margin: 24px 0;
+  }
+}
+
+/* becouse there are different images with different size i use cell with grow and basis characteristic */
+.cell {
+  border-color: black;
+  border-width: 2px;
+  border-style: solid;
+  flex-grow: 1;
+  flex-basis: 0;
+  display: flex;
+  flex-flow: column;
+}
+
+/* add for adaptability */
+@media (max-width: 640px) {
+  .cell {
+    flex: 0 0 100%;
+  }
+}
+
+.cell-img {
+  flex: 1 0 0;
+}
+
+/* use object fit for enter dimensions in the fields, transform: none delete img transformation */
+.photo-img {
+  flex: 1 0 100px;
+  max-height: 250px;
+  width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+  transform: none;
+  transition: all 0.25s ease;
+}
+
+.photo-img:hover {
+  transform: scale(1.1);
+}
+
+/* discribe photo, add shrink, grow, basis */
+.photo-title {
+  flex: 0 0 auto;
+}
+
+span {
+  text-decoration: none;
+  color: rgb(96, 96, 96);
+  font-size: 12px;
+}
+
+.Links {
+  height: 100%;
+  cursor: pointer;
+      border: 1px solid;
+
+}
