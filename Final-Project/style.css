@@ -1,6 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap");
 
-/* use only this rule and don't use margin, padding: 0 like in other examples,  because it's not correct. In my project it's not critical but on text pages it will be a bad decision */
+/* use only this rule and don't use margin, padding: 0 like in other examples,
+because it's not correct.
+In my project it's not critical but on text pages it will be a bad decision */
 * {
   box-sizing: border-box;
 }
@@ -18,7 +20,8 @@ body {
   background-size: cover;
 }
 
-/* add class "page" and use flex, becourse it's better than use flex in .body. In case, when I want to add some different elements in .body */
+/* add class "page" and use flex, becourse it's better than use flex in .body.
+In case, when I want to add some different elements in .body */
 .page {
   display: flex;
   flex-flow: column; /* my page is going down from the top */
@@ -27,7 +30,9 @@ body {
 }
 
 /* header */
-/* at first time I use absolut position, or fixed, but it's pulls out of the flow and header ceases to participate in the page markup. For fixing header use sticky  */
+/* at first time I use absolut position, or fixed,
+but it's pulls out of the flow and header ceases to participate in the page markup.
+For fixing header use sticky  */
 .header {
   background-color: rgb(255, 255, 255);
   position: sticky;
@@ -60,7 +65,9 @@ body {
   }
 }
 
-/* flex affects only at children, not grandchildren, that's why display: block I add in image. And image like in-line element (big letter), that's why I use fixed size */
+/* flex affects only at children, not grandchildren, that's why display: block
+I add in image.
+And image like in-line element (big letter), that's why I use fixed size */
 .logo-img {
   display: block;
   max-width: 100%;
@@ -112,12 +119,14 @@ a:hover {
   justify-content: center;
 }
 
-/* flex child, that'swhy I don't use inline block, because it's already block. And I use overflow: hidden, overflow outside the banner is clipped */
+/* flex child, that'swhy I don't use inline block, because it's already block.
+And I use overflow: hidden, overflow outside the banner is clipped */
 .banner {
   overflow: hidden;
 }
 
-/* fix width because if I don't do this, the banner will look terribly large and out of proportion  */
+/* fix width because if I don't do this, the banner will look terribly large and
+out of proportion  */
 .banner img {
   max-width: 100%;
 }
@@ -139,7 +148,8 @@ a:hover {
   }
 }
 
-/* becouse there are different images with different size i use cell with grow and basis characteristic */
+/* becouse there are different images with different size i use cell with grow and
+basis characteristic */
 .cell {
   border-color: black;
   border-width: 2px;
@@ -161,7 +171,8 @@ a:hover {
   flex: 1 0 0;
 }
 
-/* use object fit for enter dimensions in the fields, transform: none delete img transformation */
+/* use object fit for enter dimensions in the fields, transform: none delete img
+transformation */
 .photo-img {
   flex: 1 0 100px;
   max-height: 250px;
@@ -190,6 +201,5 @@ span {
 .Links {
   height: 100%;
   cursor: pointer;
-      border: 1px solid;
-
+  border: 1px solid;
 }
